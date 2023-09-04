@@ -1,10 +1,10 @@
 /* header */
 header {width: 100%;
-    padding: 0 360px;
+    padding: 0 265px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 31px;
+    padding-top: 20px;
     position: fixed;
     z-index: 999;
     white-space: nowrap;
@@ -58,8 +58,11 @@ main #wrap .main1 video {
 #wrap .section:nth-child(3) {
     background-image: url(../img/main3_bg.png);
 }
-#wrap .section:nth-child(4) {
-    background-image: url(../img/main4.jpg);
+#wrap .section:nth-child(4) { 
+    background-image: url(../img/main4_bg.jpg);
+}
+#wrap .section:nth-child(5) {
+    background-image: url(../img/main5_bg.jpg);
 }
 /* main2 _ products & services */
 main #wrap .main2 {
@@ -68,12 +71,12 @@ main #wrap .main2 {
 main #wrap .main2 .main2_bg {
     width: 1200px; height: 643px;
     margin: 150px auto 0;
-    display: flex;
+    /* display: flex;
     flex-flow:row  nowrap;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
-main #wrap .main2 .main2_bg .info_txt {    
-    position: block;
+main #wrap .main2 .main2_bg .info_txt {
+    /* position: block; */
 }
 main #wrap .main2 .main2_bg .info_txt h2 { 
     font-size: 2.2rem;
@@ -86,19 +89,24 @@ main #wrap .main2 .main2_bg .info_txt p {
     font-size: 1.25rem;
 }
 /* main2 - swiper 공통 css */
-main #wrap .main2 .main2_bg .swiper {}
-main #wrap .main2 .main2_bg .swiper .swiper-wrapper {
+main #wrap .main2 .main2_bg .swiper {    width: 1200px;
+    margin-top:-65px;
+}
+main #wrap .main2 .main2_bg .swiper .swiper-wrapper { 
 
 }
-main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide {}
+main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide {
+
+}
 
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .txt {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(0, 0, 0, 0.00) 20.82%), linear-gradient(293deg, rgba(243, 115, 33, 0.20) -7.6%, rgba(0, 0, 0, 0.00) 46.95%), #F37321;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 50px 50px;    
-    position: absolute; top: 50px; left: 360px;
-    transform: translateY(120%);   
-    
+    padding: 50px 50px;
+    height: 329px; width: 667px;
+    margin-top: 100px;
+    position: relative;
+    top: 80px;
 }
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .txt h2 {
     font-size:  1.5rem;
@@ -125,12 +133,11 @@ main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .txt .more_btn
     padding-left: 15px;
 }
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .info_img {
-    width: 610px; height: 640px;
-    margin-left: 46px;
 
 }
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .info_img img {
-    width: 100%;
+    width: 610px; height: 640px;
+    margin-left:-75px ;
 }
 /* swiper-slide btn */
 main #wrap .main2 .main2_bg .slide_btn {
@@ -143,7 +150,7 @@ main #wrap .main2 .main2_bg .slide_btn a {
 
 /* main3 */
 main #wrap .main3 {}
-main #wrap .main3 .news_bg {background: lightblue;
+main #wrap .main3 .news_bg {background: rgb(255, 255, 255);
     width: 1200px; margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
@@ -151,75 +158,196 @@ main #wrap .main3 .news_bg {background: lightblue;
 
 
 }
-main #wrap .main3 .news_bg h2 { background: wheat;
+main #wrap .main3 .news_bg h2 {
     width: 199px;
-    padding-top:75px ;
+    padding-top:90px ;
     padding-left:42px ;
 }
 main #wrap .main3 .news_bg h2 a {
     font-size: 2.5rem;
     font-family: '한화b';
+    padding-left: 30px;
     
 }
-main #wrap .main3 .news_bg  .news {background: indianred;
+main #wrap .main3 .news_bg  .news {
     /* width: 500px; 
     padding: 50px 90px; */
-    height: 665px;
+    width: 500px; height: 665px; margin: 0 auto;
+    /* padding: 50px 0; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 
 
 }
-main #wrap .main3 .news_bg .news a {background: wheat;
+main #wrap .main3 .news_bg .news a {
     width: 312px; height: 490px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+main #wrap .main3 .news_bg .news > a > p:first-child { 
+    width: 31px; height: 2px;
+    
+}
+main #wrap .main3 .news_bg .news a h3 {
+    font-size: 1.06rem;
+    font-family: '한화b';
+    line-height: 25px;
+    text-align: start;
+    padding-top:27px ;
+    /* padding-bottom: 42px; */
+}
+main #wrap .main3 .news_bg .news_right a h3 {
+    padding-top: 29px;
+}
+main #wrap .main3 .news_bg .news > a > .news_txt {
+    line-height: 27px;
+    padding-top: 42px;
+}
+main #wrap .main3 .news_bg .news_right > a > .news_txt {
+    padding-top: 65px;
+}
+main #wrap .main3 .news_bg .news > a > .news_date {
+    margin-top: 30px;
+}
+main #wrap .main3 .news_bg .news_left > a > .news_date {
+    margin-top: 85px;
+} 
+main #wrap .main3 .news_bg .center_line {
+    background: rgb(128, 128, 128);
+    height: 490px; width: 1px;
+    margin-top: 95px;
+}
+/* main 4 */
+main #wrap .main4 {
+}
+main #wrap .main4 .story_bg {
+    width: 1200px; margin: 0 auto;
+    margin-top: 80px;
+}
+main #wrap .main4 .story_bg .story_txt {
+    width: 100%;    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main #wrap .main4 .story_bg .story_txt h2 {
+    font-family: '한화b';
+    color: #ffF;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+main #wrap .main4 .story_bg .story_txt p {
+    padding-bottom:30px ;
+    color: #ffF;
+    font-size: 1.25rem;
+}
+main #wrap .main4 .story_bg .story_txt video {
+    width: 100%; margin: 0 auto;
+    text-align: center;
+}
+main #wrap .main4 .story_bg .sns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 0 173px;
+}
+main #wrap .main4 .story_bg .sns li {
+
+}
+main #wrap .main4 .story_bg .sns li a {
+    display:flex;
+    align-items: center;
+    padding:5px 50px 0;
+}
+main #wrap .main4 .story_bg .sns li a img {
+    padding-right: 25px;
+}
+main #wrap .main4 .story_bg .sns li a span {
+    color: #fff;
+}
+/* main 5 */
+main #wrap .main5 {
+
+}
+main #wrap .main5 .main5_bg {
+    width: 1200px; margin: 0 auto;    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main #wrap .main5 .main5_bg .employ_left {
+    background: url(../img/main5_1.jpg) no-repeat;
+    width: 686px; height: 385px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #F37321;
+    
+}
+main #wrap .main5 .main5_bg .employ_left h2 {
+    font-family: '한화b';
+    font-size: 2.18rem;
+    padding-bottom: 10px;
+}
+main #wrap .main5 .main5_bg .employ_left > p {
+    font-size: 1.125rem;
+    padding: 20px 0;
+}
+main #wrap .main5 .main5_bg .employ_left .more_btn{
+    padding: 17px 40px;
+    background: #F37321;
+    color: #fff;
+    border-radius: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main #wrap .main5 .main5_bg .employ_left .more_btn p {
+    font-size: 1.125rem;
+    padding-right: 15px;
+
+}
+main #wrap .main5 .main5_bg .employ_left p img {}
+main #wrap .main5 .main5_bg .employ_right {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
 }
-main #wrap .main3 .news_bg .news > a > p:first-child { background: rgb(243, 138, 18);
-    width: 31px; height: 2px;
-    /* margin-bottom: -10px; */
-    
+main #wrap .main5 .main5_bg .employ_right .right_top {
+    background: url(../img/main5_2.png);
+    width: 490px; height: 185px;
 }
-main #wrap .main3 .news_bg .news a h3 {background: rebeccapurple;
-    font-size: 1.06rem;
+main #wrap .main5 .main5_bg .employ_right > a {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    color: #fff;
+    padding-right: 10px;
+}
+main #wrap .main5 .main5_bg .employ_right > a > h3 {
+    font-size: 1.875rem;
     font-family: '한화b';
-    line-height: 25px;
-    text-align: center;
-    /* padding-bottom: 42px; */
-
+    padding-bottom: 10px;
 }
-main #wrap .main3 .news_bg .news > a > .news_txt {
-    background: lightgreen;
-    line-height: 27px;
+main #wrap .main5 .main5_bg .employ_right .right_top p {
 }
-
-main #wrap .main3 .news_bg .center_line {background: rgb(4, 5, 4);
-    width: 2px; height: 100px;
+main #wrap .main5 .main5_bg .employ_right .right_btm {
+    background: url(../img/main5_2.png);
+    width: 490px; height: 185px;
 }
-/* main 4 */
-main #wrap .main4 {}
-main #wrap .main4 h2 {}
-main #wrap .main4 p {}
-main #wrap .main4 video {}
-main #wrap .main4 video {}
-main #wrap .main4 .sns {}
-main #wrap .main4 .sns li {}
-main #wrap .main4 .sns li a {}
-main #wrap .main4 .sns li a img {}
-/* main 5 */
-main #wrap .main5 {}
-main #wrap .main5 .employ_left {}
-main #wrap .main5 .employ_left h2 {}
-main #wrap .main5 .employ_left p {}
-main #wrap .main5 .employ_left p img {}
-main #wrap .main5 .employ_right {}
-main #wrap .main5 .employ_right .right_top {}
-main #wrap .main5 .employ_right .right_top h3 {}
-main #wrap .main5 .employ_right .right_top p {}
-main #wrap .main5 .employ_right .right_btm {}
-main #wrap .main5 .employ_right .right_btm h3 {}
-main #wrap .main5 .employ_right .right_btm h3 p {}
+main #wrap .main5 .main5_bg .employ_right .right_btm h3 {}
+main #wrap .main5 .main5_bg .employ_right .right_btm h3 p {}
 /* footer */
-footer {}
+.fp-hegit-auto { 
+    height: auto !important
+}
 footer h1 {}
 footer h1 img {}
 footer .f_top {}
