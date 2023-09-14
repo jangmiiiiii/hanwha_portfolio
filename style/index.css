@@ -362,23 +362,65 @@ main #wrap .main5 .main5_bg .employ_right .right_btm {
 main #wrap .main5 .main5_bg .employ_right .right_btm h3 {}
 main #wrap .main5 .main5_bg .employ_right .right_btm h3 p {}
 /* footer */
-.fp-hegit-auto { 
-    height: auto !important
+
+main #wrap .main5 #footer {
+    background:#262626;
+    position: relative;
+    bottom: 0;
+    color: #fff;
 }
-footer h1 {}
-footer h1 img {}
-footer .f_top {}
-footer .f_top .f_top_left {}
-footer .f_top .f_top_left li {}
-footer .f_top .f_top_left li a {}
-footer .f_top .f_top_left li a em {}
-footer .f_top .f_top_right {}
-footer .f_top .f_top_right .group_list {}
-footer .f_top .f_top_right .group_list #see {}
-footer .f_top .f_btm {}
-footer .f_btm .f_btm_left {}
-footer .f_btm .f_btm_left p {}
-footer .f_btm .f_btm_left p {}
-footer .f_btm .f_btm_right {}
-footer .f_btm .f_btm_right a {}
-footer .f_btm .f_btm_right a img {}
+main #wrap .main5 #footer .footer_all {
+    width: 1200px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main #wrap .main5 .footer_all .footer_right {
+    width: 980px;
+}
+main #wrap .main5 .footer_all  .f_top {
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid white;
+padding-bottom: 10px;
+}
+main #wrap .main5 .footer_all .f_top h1 {}
+main #wrap .main5 .footer_all .f_top h1 img {width: 100%;}
+main #wrap .main5 .footer_all .f_top .f_top_left {
+    width: 394px;
+    display: flex;
+    justify-content: space-between;
+}
+main #wrap .main5 .footer_all .f_top .f_top_left li {
+
+
+}
+main #wrap .main5 .footer_all .f_top .f_top_left li a {color: #fff;}
+main #wrap .main5 .footer_all .f_top .f_top_left li a em {
+    font-weight: 700;
+}
+main #wrap .main5 .footer_all .f_top .f_top_right {}
+main #wrap .main5 .footer_all .f_top .f_top_right .group_list {background: #262626;
+    border: 1px solid #F37321;
+    color: #F37321;
+    padding: 3px;
+}
+main #wrap .main5 .footer_all .f_top .f_top_right .group_list:hover {
+}
+main #wrap .main5 .footer_all .f_btm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:10px ;
+}
+main #wrap .main5 .footer_all .f_btm .f_btm_left {}
+main #wrap .main5 .footer_all .f_btm .f_btm_left p {}
+main #wrap .main5 .footer_all .f_btm .f_btm_left p {}
+main #wrap .main5 .footer_all .f_btm .f_btm_right {
+}
+main #wrap .main5 .footer_all .f_btm .f_btm_right a {
+    margin-left: 20px;
+}
+main #wrap .main5 .footer_all .f_btm .f_btm_right a img {}
