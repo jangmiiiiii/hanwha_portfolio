@@ -92,18 +92,32 @@ main #wrap .main2 .main2_bg .info_txt p {
     font-size: 1.25rem;
 }
 /* main2 - swiper 공통 css */
-main #wrap .main2 .main2_bg .swiper {    width: 1200px;
-    margin-top:-65px;
+main #wrap .main2 .main2_bg .swiper {    
+    width: 1200px; margin: 0 auto;
 }
-main #wrap .main2 .main2_bg .swiper .swiper-wrapper { 
-
+main #wrap .main2 .main2_bg .swiper .swiper-wrapper {
+    width: 100%;
 }
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide {
 display: flex;
-}
+width: 100%;
 
-main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .txt {
+}
+/* 스와이퍼 bg 색 */
+main #wrap .main2 .main2_bg .swiper .swiper-wrapper .slide1 > .txt {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(0, 0, 0, 0.00) 20.82%), linear-gradient(293deg, rgba(243, 115, 33, 0.20) -7.6%, rgba(0, 0, 0, 0.00) 46.95%), #F37321;
+}
+main #wrap .main2 .main2_bg .swiper .swiper-wrapper .slide2 > .txt {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(0, 0, 0, 0.00) 20.82%), #03274B;
+} 
+main #wrap .main2 .main2_bg .swiper .swiper-wrapper .slide3 > .txt {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(0, 0, 0, 0.00) 20.82%), linear-gradient(293deg, rgba(0, 0, 0, 0.20) 2.3%, rgba(0, 0, 0, 0.00) 46.98%), #005695;
+} 
+main #wrap .main2 .main2_bg .swiper .swiper-wrapper .slide4 > .txt {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(0, 0, 0, 0.00) 20.82%), linear-gradient(293deg, rgba(0, 0, 0, 0.20) 2.3%, rgba(0, 0, 0, 0.00) 46.98%), #B21963;
+} 
+main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .txt {
+
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 50px 50px;
     height: 329px; width: 667px;
@@ -111,6 +125,7 @@ main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .txt {
     position: relative;
     top: 80px;
     z-index: 60;
+    margin-left: 10px;
 }
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .txt h2 {
     font-size:  1.5rem;
@@ -142,6 +157,7 @@ main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .info_img {
     left:-60px;
 }
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .info_img img {
+    width: 100%; height: 100%;
 }
 /* swiper-slide btn */
 main #wrap .main2 .main2_bg .slide_btn {
@@ -152,14 +168,18 @@ main #wrap .main2 .main2_bg .slide_btn a {
     margin: -2px;
 }
 /* swiper btn */
+
 .swiper-button-prev {
-background-image: url(../img/btn_left.png);
-width: 50px; height: 50px;
+/* background-image: url(../img/btn_left.png);
+width: 40px; height: 40px;
+position: absolute;
+bottom: 60px; */
 }
 .swiper-button-next {
-
+    /* background-image: url(../img/btn_right.png);
+    width: 50px; height: 50px; */
 }
-.swiper-button-prev::after,.swiper-button-next::after {display: none;}
+/* .swiper-button-prev::after,.swiper-button-next::after {display: none;} */
 /* main3 */
 main #wrap .main3 {}
 main #wrap .main3 .news_bg {background: rgb(255, 255, 255);
@@ -270,7 +290,7 @@ main #wrap .main4 .story_bg .sns {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;    
-    padding: 0 173px;
+    padding: 40px 173px 0;
 }
 main #wrap .main4 .story_bg .sns li {
 
@@ -365,9 +385,11 @@ main #wrap .main5 .main5_bg .employ_right .right_btm h3 p {}
 
 main #wrap .main5 #footer {
     background:#262626;
-    position: relative;
+    position: absolute;
+    width: 100%;
     bottom: 0;
     color: #fff;
+    padding: 38px 0;
 }
 main #wrap .main5 #footer .footer_all {
     width: 1200px; margin: 0 auto;
