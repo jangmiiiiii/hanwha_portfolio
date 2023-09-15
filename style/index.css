@@ -97,6 +97,7 @@ main #wrap .main2 .main2_bg .swiper {
 }
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper {
     width: 100%;
+    position: relative;
 }
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide {
 display: flex;
@@ -170,16 +171,23 @@ main #wrap .main2 .main2_bg .slide_btn a {
 /* swiper btn */
 
 .swiper-button-prev {
-/* background-image: url(../img/btn_left.png);
-width: 40px; height: 40px;
-position: absolute;
-bottom: 60px; */
+    padding: 10px 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/btn_left.png);
+    position: absolute;
+    top: 600px !important;
+    width: 100px; height: 100px !important;
 }
 .swiper-button-next {
-    /* background-image: url(../img/btn_right.png);
-    width: 50px; height: 50px; */
+    background-image: url(../img/btn_right.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 600px !important;
+    left: 36px !important;
 }
-/* .swiper-button-prev::after,.swiper-button-next::after {display: none;} */
+.swiper-button-prev::after,.swiper-button-next::after {display: none;}
 /* main3 */
 main #wrap .main3 {}
 main #wrap .main3 .news_bg {background: rgb(255, 255, 255);
