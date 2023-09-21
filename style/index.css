@@ -10,9 +10,15 @@ header {width: 100%;
     white-space: nowrap;
 }
 header h1 {}
-header h1 img {width: 100%;}
+header h1 a img:hover{
+    transform: scale(1.1);
+}
+header h1 a img {width: 100%;}
 header nav {}
 header nav a:last-child {padding-right: 0;}
+header nav a:hover {
+    font-size: 1.2rem;
+}
 header nav a {
     padding-right: 78px;
     font-size: 1.125rem;
@@ -24,11 +30,17 @@ header .user {
     align-items: center;
 }
 header .user a:last-child {padding-right: 0;}
+header .user a:hover {
+    font-weight: 600;
+}
 header .user a {
     padding-right: 10px;
     color: #fff;
 }
-header .user a img {}
+header .user a img:hover {
+    transform: scale(1.1);
+}
+header .user a img {width: 100%;}
 /* main */
 main {
     margin: 0 auto;
@@ -49,18 +61,22 @@ main #wrap .main1 .main1_txt {
     white-space: nowrap;
     text-align: center;
     color: #fff;
-    transition: all 3s;
 }
 main #wrap .main1 .main1_txt p {
     font-size: 2.185rem;
+    letter-spacing: -0.02rem;
 }
 main #wrap .main1 .main1_txt p em {
     font-size: 2.812rem;
     color:#F37321 ;
     font-family: 한화b;
 }
-main #wrap .main1 .main1_txt p:first-child {}
-main #wrap .main1 .main1_txt p:nth-child(2) {}
+main #wrap .main1 .main1_txt p:first-child {
+    padding-bottom: 5px;
+}
+main #wrap .main1 .main1_txt p:nth-child(2) {
+    padding-bottom: 10px;
+}
 main #wrap .main1 .main1_txt p:last-child {
     font-size: 8rem;
     font-family: 한화b;
@@ -154,12 +170,37 @@ main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .txt h2 {
     font-size:  1.5rem;
     font-weight: 700;
     padding-bottom: 35px;
+    line-height: 30px;
 }
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .txt p {
     font-size:  1.125rem; 
     white-space: nowrap;
     line-height: 25px;
     padding-bottom: 30px ;
+}
+main #wrap .main2 .main2_bg .swiper .swiper-wrapper .slide1 .txt .more_btn:hover {
+    background: rgba(255, 255, 255, 0.438);
+    border: 1px solid rgba(255, 255, 255, 0.438);
+    color: #F37321;
+    font-weight: 700;
+}
+main #wrap .main2 .main2_bg .swiper .swiper-wrapper .slide2 .txt .more_btn:hover {
+    background: rgba(255, 255, 255, 0.438);
+    border: 1px solid rgba(255, 255, 255, 0.438);
+    color: #03274B;
+    font-weight: 700;
+}
+main #wrap .main2 .main2_bg .swiper .swiper-wrapper .slide3 .txt .more_btn:hover {
+    background: rgba(255, 255, 255, 0.438);
+    border: 1px solid rgba(255, 255, 255, 0.438);
+    color: #005695;
+    font-weight: 700;
+}
+main #wrap .main2 .main2_bg .swiper .swiper-wrapper .slide4 .txt .more_btn:hover {
+    background: rgba(255, 255, 255, 0.438);
+    border: 1px solid rgba(255, 255, 255, 0.438);
+    color: #B21963;
+    font-weight: 700;
 }
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .txt .more_btn {
     color:white ;
@@ -174,6 +215,7 @@ main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .txt .more_btn
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .txt .more_btn img {
     padding-left: 15px;
 }
+
 main #wrap .main2 .main2_bg .swiper .swiper-wrapper .swiper-slide .info_img {
     position: relative; 
     width: 610px; height: 640px;
@@ -191,7 +233,12 @@ main #wrap .main2 .main2_bg .slide_btn a {
     margin: -2px;
 }
 /* swiper btn */
-
+.swiper-button-prev:hover {
+    border:1px solid #ffffff;
+}
+.swiper-button-next:hover {
+    border:1px solid #ffffff;
+}
 .swiper-button-prev {
     background-size: 100%;
     background-repeat: no-repeat;
@@ -222,7 +269,7 @@ main #wrap .main3 .news_bg {background: rgb(255, 255, 255);
 main #wrap .main3 .news_bg h2 {
     width: 199px;
     padding-top:90px ;
-    padding-left:42px ;
+    text-align: center;
 }
 main #wrap .main3 .news_bg h2 a {
     font-size: 2.5rem;
@@ -242,29 +289,34 @@ main #wrap .main3 .news_bg  .news {
 
 
 }
-main #wrap .main3 .news_bg .news a {
-    width: 312px; height: 490px;
+main #wrap .main3 .news_bg .news a { 
+    width: 440px; height: 490px;
     display: flex;
     flex-flow: column nowrap;
+
 }
 main #wrap .main3 .news_bg .news > a > p:first-child { 
     width: 31px; height: 2px;
     
 }
 main #wrap .main3 .news_bg .news a h3 {
-    font-size: 1.06rem;
+    font-size: 1.5rem;
     font-family: '한화b';
-    line-height: 25px;
+    line-height: 32px;
     text-align: start;
     padding-top:27px ;
     /* padding-bottom: 42px; */
 }
 main #wrap .main3 .news_bg .news_right a h3 {
     padding-top: 29px;
+
 }
-main #wrap .main3 .news_bg .news > a > .news_txt {
+main #wrap .main3 .news_bg .news > a > .news_txt { 
     line-height: 27px;
     padding-top: 42px;
+    font-size: 1.13rem;
+    line-height: 2rem;
+    font-family: notosanskr;
 }
 main #wrap .main3 .news_bg .news_right > a > .news_txt {
     padding-top: 65px;
@@ -273,7 +325,7 @@ main #wrap .main3 .news_bg .news > a > .news_date {
     margin-top: 30px;
 }
 main #wrap .main3 .news_bg .news_left > a > .news_date {
-    margin-top: 85px;
+    margin-top: 55px;
 } 
 main #wrap .main3 .news_bg .center_line {
     background: rgb(128, 128, 128);
@@ -329,8 +381,14 @@ main #wrap .main4 .story_bg .sns li a {
     align-items: center;
     padding:5px 50px 0;
 }
+main #wrap .main4 .story_bg .sns li a img:hover {
+    transform: scale(1.1);
+}
 main #wrap .main4 .story_bg .sns li a img {
     padding-right: 25px;
+}
+main #wrap .main4 .story_bg .sns li a span:hover {
+    font-weight: 700;
 }
 main #wrap .main4 .story_bg .sns li a span {
     color: #fff;
@@ -363,6 +421,11 @@ main #wrap .main5 .main5_bg .employ_left h2 {
 main #wrap .main5 .main5_bg .employ_left > p {
     font-size: 1.125rem;
     padding: 20px 0;
+    font-weight: 600;
+}
+main #wrap .main5 .main5_bg .employ_left .more_btn:hover {
+    color: #F37321;
+    background: #fff;
 }
 main #wrap .main5 .main5_bg .employ_left .more_btn{
     padding: 17px 40px;
@@ -374,12 +437,17 @@ main #wrap .main5 .main5_bg .employ_left .more_btn{
     justify-content: center;
     align-items: center;
 }
-main #wrap .main5 .main5_bg .employ_left .more_btn p {
+
+main #wrap .main5 .main5_bg .employ_left .more_btn p:first-child {
     font-size: 1.125rem;
     padding-right: 15px;
-
 }
-main #wrap .main5 .main5_bg .employ_left p img {}
+main #wrap .main5 .main5_bg .employ_left .more_btn:hover p:last-child {
+background: url(../img/btn_right_orange2.png) no-repeat;
+}
+main #wrap .main5 .main5_bg .employ_left .more_btn:hover img {
+    opacity: 0;
+}
 main #wrap .main5 .main5_bg .employ_right {
     display: flex;
     flex-flow: column nowrap;
@@ -402,7 +470,14 @@ main #wrap .main5 .main5_bg .employ_right > a > h3 {
     font-family: '한화b';
     padding-bottom: 10px;
 }
-main #wrap .main5 .main5_bg .employ_right .right_top p {
+main #wrap .main5 .main5_bg .employ_right .right_top:hover {
+    transform: scale(1.1);
+
+}
+main #wrap .main5 .main5_bg .employ_right .right_top {
+}
+main #wrap .main5 .main5_bg .employ_right .right_btm:hover {
+    transform: scale(1.1);
 }
 main #wrap .main5 .main5_bg .employ_right .right_btm {
     background: url(../img/main5_2.png);

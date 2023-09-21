@@ -12,12 +12,16 @@
 </head>
 <body>
     <header>
-        <h1><img src="./img/logo/han_logo_white165.png" alt=""></h1>
+        <h1>
+            <a href="#">
+                <img src="./img/logo/han_logo_white165.png" alt="">
+            </a>
+        </h1>
         <nav>
             <a href="#hanwha_info">한화소개</a>
             <a href="#hanwha_project">사업분야</a>
-            <a href="#hawha_media">미디어룸</a>
-            <a href="#hawha_story">지속가능경영</a>
+            <a href="#hawha_media">뉴스</a>
+            <a href="#hawha_story">미디어룸</a>
             <a href="#hawha_employ">인재채용</a>
         </nav>
         <div class="user">
@@ -98,8 +102,7 @@
                                 ‘한화사이언스챌린지 2023’ 시상식 개최
                             </h3>
                             <p class="news_txt">
-                                대상은 ‘물레방아 구조를 활용한 댐 없는 소수력 <br>
-                                발전 기술’에 대한 연구를 진행한 피쉬파워팀(서울과학고 서동주, 조용우 학생, 지도교사 배동일)이 수상했다. 피쉬파워팀은 높은 초기 건설 비용이 드는 댐을 대체하면서 친환경적이고 동시에 높은 경제성을 갖는 발전소를 만들기 위한 아이디어를 제안했다. 수차의 날개는 형상에 따라 추력 특성이 달라진다는 점에 착안해 저유속에서도 발전 가능한 접이식 날개 수차를 시제작하기도 했다. 
+                                대상은 ‘물레방아 구조를 활용한 댐 없는 소수력 발전 기술’에 대한 연구를 진행한 피쉬파워팀(서울과학고 서동주, 조용우 학생, 지도교사 배동일)이 수상했다. 피쉬파워팀은 높은 초기 건설 비용이 드는 댐을 대체하면서 친환경적이고 동시에 높은 경제성을 갖는 발전소를 만들기 위한 아이디어를 제안했다. 수차의 날개는 형상에 따라 추력 특성이 달라진다는 점에 착안해 저유속에서도 발전 가능한 접이식 날개 수차를 시제작하기도 했다. 
                             </p>
                             <p class="news_date">2023.08.28</p>
                         </a>
@@ -112,17 +115,7 @@
                                 UAM 버티포트 공동연구 협약 체결
                             </h3>
                             <p class="news_txt">
-                                ㈜한화 건설부문, 한국공항공사, 포스코는 8월 <br>
-                                23일 한국공항공사 본사에서 '빌딩형 UAM 버티 <br>
-                                포트 개발을 위한 전략적 기술개발' 공동연구 업 <br>
-                                무협약을 체결했다. ㈜한화를 비롯한 3사는 이번 <br>
-                                협약을 바탕으로 UAM(Urban Air Mobility, 도심<br> 
-                                항공교통) 상용화시 필요한 건설 인프라 구축 관 <br>
-                                련 기술을 공동 연구할 계획이다. 특히 UAM 버<br> 
-                                티포트(이착륙장)에 대한 기술을 선제적으로 공<br> 
-                                동 개발하여 잠실 MICE, 수서역 복합개발 등 향 <br>
-                                후 UAM 운항이 예상되는 도심지 복합개발사업<br> 
-                                내 적용을 검토하기로 했다
+                                ㈜한화 건설부문, 한국공항공사, 포스코는 8월23일 한국공항공사 본사에서 '빌딩형 UAM 버티포트 개발을 위한 전략적 기술개발' 공동연구 업무협약을 체결했다. ㈜한화를 비롯한 3사는 이번 협약을 바탕으로 UAM (Urban Air Mobility, 도심항공교통) 상용화시 필요한 건설 인프라 구축 관련 기술을 공동 연구할 계획이다. 특히 UAM 버티포트(이착륙장)에 대한 기술을 선제적으로 공동 개발하여 잠실 MICE, 수서역 복합개발 등 향후 UAM 운항이 예상되는 도심지 복합개발사업내 적용을 검토하기로 했다
                             </p>
                             <p class="news_date">2023.08.24</p>
                         </a>
@@ -172,7 +165,7 @@
                         <p>한화와 함께 꿈을 시련 시킬 인재를 기다립니다.</p>
                         <a href="#" class="more_btn">
                             <p>View more </p>
-                            <img src="./img/btn_right_orange.png" alt="">
+                            <p><img src="./img/btn_right_orange.png" alt=""></p>
                         </a>
                     </div>
                     <div class="employ_right">
@@ -260,7 +253,6 @@
         });
         //.section형제의 부모대상 입력 / 적용대상(section)의 부모입력
         // $('#wrap').fullpage() 
-        $('#wrap').fullpage()
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
@@ -269,51 +261,22 @@
         $('#wrap').fullpage({
             scrollBar:true,
             scrollingSpead:2000,
-            nabigation:true,
-            navigationTooltips:['한화소개','사업분야','미디어룸','지속가능경영','인재채용']
+            navigation:true,
+            navigationTooltips:['한화소개','사업분야','뉴스','미디어룸','인재채용']
         })
-        gsap.fromTo('.main1_txt',{
+        gsap.fromTo('.main1 .main1_txt',{
             //from 처음값
-            opacity:0,
-            scale:0.8,
-            duration:2,
+            opacity:0.6,
+            scale:0.1,
+            duration:0,
         },{
             //To 결과값
             opacity:1,
             scale:1,
-            duration:1.2,
             x:-500, 
+            duration:2,
             scrollTrigger:'.main1'
         })
     </script>
-    <div id="fp-nav" class="right">
-        <ul>
-            <li>
-                <a href="#" class="active">
-                    <span></span>
-                </a>
-            </li>
-            <li>
-                <a href="#" >
-                    <span></span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span></span>
-                </a>
-            </li>
-            <li>
-                <a href="#" >
-                    <span></span>
-                </a>
-            </li>
-            <li>
-                <a href="#" >
-                    <span></span>
-                </a>
-            </li>
-        </ul>
-    </div>
 </body>
 </html>
