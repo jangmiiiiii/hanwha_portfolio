@@ -34,17 +34,39 @@ main {
     margin: 0 auto;
     z-index: 800;
 }
-main #wrap {
-    z-index: 800;}
+main #wrap {}
 main #wrap .main1 {
-    background: lightgrey;
+
 }
-main #wrap .main1 p {}
 main #wrap .main1 video {
     display: block;
     /* width: 100%; */ height: 100%;
     margin: 0 auto;
 }
+main #wrap .main1 .main1_txt {
+    position: absolute; top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    transition: all 3s;
+}
+main #wrap .main1 .main1_txt p {
+    font-size: 2.185rem;
+}
+main #wrap .main1 .main1_txt p em {
+    font-size: 2.812rem;
+    color:#F37321 ;
+    font-family: 한화b;
+}
+main #wrap .main1 .main1_txt p:first-child {}
+main #wrap .main1 .main1_txt p:nth-child(2) {}
+main #wrap .main1 .main1_txt p:last-child {
+    font-size: 8rem;
+    font-family: 한화b;
+}
+main #wrap .main1 .main1_txt p:last-child img {}
+
 /* full page (반얀트리참고) */        
 #wrap .section {
     background-position: center;
